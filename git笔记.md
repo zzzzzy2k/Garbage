@@ -60,7 +60,7 @@ git diff
 >
 > 请注意，git diff 本身只显示尚未暂存的改动，而不是自上次提交以来所做的所有改动。 所以有时候你一下子暂存了所有更新过的文件后，运行 git diff 后却什么也没有，就是这个原因。
 
-#### git diff, git diff --cached, git diff HEAD 之间的差别
+git diff, git diff --cached, git diff HEAD 之间的差别
 
 > Git 管理的文件分为：工作区，版本库，版本库又分为暂存区 stage 和暂存区分支 master(仓库)
 >
@@ -142,10 +142,8 @@ git reset --hard ad2080c
 ```
 
 > 1. 没有 git add 时，用 git checkout -- file
->
-> 2.已经 git add 时，先 git reset HEAD <file>回退到 1.，再按 1.操作
->
-> 3.已经 git commit 时，用 git reset 回退版本
+> 2. 已经 git add 时，先 git reset HEAD[file]回退到 1.，再按 1.操作
+> 3. 已经 git commit 时，用 git reset 回退版本
 
 ### 删除文件
 
@@ -164,5 +162,5 @@ $ git commit -m "remove test.txt"
 一旦删除错了，可以恢复
 
 ```bash
-$ git checkout -- test.txt
+$git checkout -- test.txt
 ```
