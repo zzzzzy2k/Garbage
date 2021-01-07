@@ -138,3 +138,8 @@ git reflog
 ```bash
 git reset --hard ad2080c
 ```
+> 1. 没有git add时，用git checkout -- file
+>
+> 2.已经git add时，先git reset HEAD <file>回退到1.，再按1.操作
+>
+> 3.已经git commit时，用git reset回退版本
