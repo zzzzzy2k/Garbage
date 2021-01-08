@@ -164,3 +164,6 @@ $ git commit -m "remove test.txt"
 ```bash
 $git checkout -- test.txt
 ```
+
+## 远程仓库
+
